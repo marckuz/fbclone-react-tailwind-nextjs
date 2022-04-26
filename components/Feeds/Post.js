@@ -16,15 +16,9 @@ function Post({name, id, message, email, postImage, image, timestamp}) {
                 />
                 <div>
                     <p className='font-medium'>{name}</p>
-                    {timestamp ? (
-                        <p className='text-xs text-gray-400'>
-                            {timestamp?.toDate().toLocaleString()}
-                        </p>
-                    ) : (
-                        <p className='text-xs text-gray-400'>
-                            Loading
-                        </p>
-                    )}
+                    <p className='text-xs text-gray-400'>
+                        {timestamp?.toDate().toLocaleString()}
+                    </p>
                 </div>
             </div>
             <p className='pt-4'>
